@@ -15,8 +15,6 @@ function getRandomIntInclusive(min, max) {
 
 const minStringlenght = 20;
 const maxStringlenght = 140;
-let minString;
-let maxString;
 
 let randomString = function getRandomString(minString, maxString) {
   min = Math.ceil(minStringlenght);
@@ -24,7 +22,7 @@ let randomString = function getRandomString(minString, maxString) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function checkStringlenght(randomString, maxStringlenght) {
+function checkStringlenght(randomString, minStringlenght, maxStringlenght) {
   if (randomString >= minStringlenght && randomString <= maxStringlenght) {
     return true;
   } else {
