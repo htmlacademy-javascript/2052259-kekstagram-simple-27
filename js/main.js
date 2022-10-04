@@ -31,5 +31,3 @@ function checkStringlenght(randomString, minStringlenght, maxStringlenght) {
 }
 
 // Вопрос 1 - зачем в ДЗ при объявлении функции необходимо записать "максимальную_длинну"? Вопрос 2 - как проверить работу программы мне в VS? Вопорс 3 - почему то не запускается в терминале команда npm run lint?
-
-getRandomString(1, 183);
