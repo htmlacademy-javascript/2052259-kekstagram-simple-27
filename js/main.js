@@ -13,16 +13,15 @@ function getRandomIntInclusive(min, max) {
 
 // Функция для проверки максимальной длины строки.
 
-let minStringlenght = 20;
-let maxStringlenght = 140;
+const minStringlenght = 20;
+const maxStringlenght = 140;
 let minString;
 let maxString;
-let randomString;
 
-function getRandomString(minString, maxString) {
+let randomString = function getRandomString(minString, maxString) {
   min = Math.ceil(minStringlenght);
   max = Math.floor(maxStringlenght);
-  return randomString = Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function checkStringlenght(randomString, maxStringlenght) {
@@ -33,6 +32,6 @@ function checkStringlenght(randomString, maxStringlenght) {
   }
 }
 
-// Вопрос 1 - зачем в ДЗ при объявлении функции необходимо записать "максимальную_длинну"? Вопрос 2 - как проверить работу программы мне в VS?
+// Вопрос 1 - зачем в ДЗ при объявлении функции необходимо записать "максимальную_длинну"? Вопрос 2 - как проверить работу программы мне в VS? Вопорс 3 - почему то не запускается в терминале команда npm run lint?
 
 getRandomString(1, 183);
