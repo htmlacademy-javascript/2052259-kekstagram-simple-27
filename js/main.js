@@ -1,5 +1,6 @@
 // Второе задание "Вспомогательные функции".
 // Функция, которая возвращающает случайное целое число из переданного диапазона включительно. Использовал материал с сайта https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
 /*
 
 function getRandomIntInclusive(min, max) {
