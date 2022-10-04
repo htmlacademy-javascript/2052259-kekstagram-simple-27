@@ -13,20 +13,20 @@ function getRandomIntInclusive(min, max) {
 
 // Функция для проверки максимальной длины строки.
 
-let min_Stringlenght = 20;
-let max_Stringlenght = 140;
-let min_String;
-let max_String;
-let random_String;
+let minStringlenght = 20;
+let maxStringlenght = 140;
+let minString;
+let maxString;
+let randomString;
 
-function getRandomString(min_String, max_String) {
-  min = Math.ceil(min_Stringlenght);
-  max = Math.floor(max_Stringlenght);
-  return random_String = Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+function getRandomString(minString, maxString) {
+  min = Math.ceil(minStringlenght);
+  max = Math.floor(maxStringlenght);
+  return randomString = Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
 }
 
-function checkStringlenght(random_String, max_Stringlenght) {
-  if (random_String >= min_Stringlenght && random_String <= max_Stringlenght) {
+function checkStringlenght(randomString, maxStringlenght) {
+  if (randomString >= minStringlenght && randomString <= maxStringlenght) {
     return true;
   } else {
     return false;
