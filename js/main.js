@@ -15,9 +15,11 @@ function getRandomIntInclusive(min, max) {
 
 let min_Stringlenght = 20;
 let max_Stringlenght = 140;
+let min_String;
+let max_String;
 let random_String;
 
-function getRandomString(min_Stringlenght, max_Stringlenght) {
+function getRandomString(min_String, max_String) {
   min = Math.ceil(min_Stringlenght);
   max = Math.floor(max_Stringlenght);
   return random_String = Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
@@ -30,4 +32,7 @@ function checkStringlenght(random_String, max_Stringlenght) {
     return false;
   }
 }
+
 // Вопрос 1 - зачем в ДЗ при объявлении функции необходимо записать "максимальную_длинну"? Вопрос 2 - как проверить работу программы мне в VS?
+
+getRandomString(1, 183);
