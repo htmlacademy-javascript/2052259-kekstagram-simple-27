@@ -13,6 +13,8 @@ function getRandomIntInclusive(min, max) {
 
 // Функция для проверки максимальной длины строки.
 
+/* Написал до ретроспективы)
+
 const minStringlenght = 20;
 const maxStringlenght = 140;
 
@@ -29,5 +31,26 @@ function checkStringlenght(randomString, minStringlenght, maxStringlenght) {
     return false;
   }
 }
-
+*/
 // Вопрос 1 - зачем в ДЗ при объявлении функции необходимо записать "максимальную_длинну"? Вопрос 2 - как проверить работу программы мне в VS? Вопорс 3 - почему то не запускается в терминале команда npm run lint?
+
+function getRandomPositiveInteger(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return NaN;
+  }
+  if (a < 0 || b < 0) {
+    return NaN;
+  }
+
+  const lower = Math.ceil(Math.min(a, b));
+  const upper = Math.floor(Math.max(a, b));
+  const result = Math.random() * (upper - lower + 1) + lower;
+  return Math.floor(result);
+}
+
+function checkStringlenght(string, lenght) {
+  return string.lenght <= lenght;
+}
+
+getRandomPositiveInteger(0, 0);
+checkStringlenght('', 140);
